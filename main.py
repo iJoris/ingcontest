@@ -7,17 +7,11 @@ except ImportError:
 
 from DocumentProcessor import DocumentProcessor
 
-
 documentProcessor = DocumentProcessor()
 INPUT_DIRECTORY = 'inputfiles'
 
 filesToBeScanned = os.listdir(INPUT_DIRECTORY)
 
 for file in filesToBeScanned:
-    print("Found in file: ",file, " Contractnummer: "
-          , documentProcessor.retrieveContractNumber(INPUT_DIRECTORY + "/"  + file))
-
-
-
-
-
+    print("Found in file: ", file, " Contractnummer: "
+          , documentProcessor.retrieveContractNumber(INPUT_DIRECTORY + "/" + file))
